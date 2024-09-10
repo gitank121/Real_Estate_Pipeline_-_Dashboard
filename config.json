@@ -1,9 +1,0 @@
-{
-    "mysql":{
-        "host":"localhost",
-        "user":"root",
-        "password":"Gitank@2112",
-        "database":"real_estate"
-
-    }
-}
