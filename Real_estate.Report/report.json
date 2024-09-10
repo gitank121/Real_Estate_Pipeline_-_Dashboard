@@ -1,0 +1,91 @@
+{
+  "config": "{\"version\":\"5.57\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU08\",\"version\":\"5.57\",\"type\":2}},\"activeSectionIndex\":2,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "pods": [
+    {
+      "boundSection": "619b44d606361c01d813",
+      "config": "{}",
+      "name": "d2bc4014458a0ba3c017"
+    }
+  ],
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU08",
+            "path": "BaseThemes/CY24SU08.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 2",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "296d33f18898c3e6385a",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"f518800c6b267136034e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.599434391231215,\"y\":0,\"z\":0,\"width\":1268.9037171216798,\"height\":719.2473336906896,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"real_estate.list_date.Variation.Date Hierarchy.Month\"},{\"queryRef\":\"real_estate.list_date.Variation.Date Hierarchy.Day\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(real_estate.last_sold_price)\"},{\"queryRef\":\"Sum(real_estate.list_price)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"r\",\"Entity\":\"real_estate\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Name\":\"Variation\",\"Property\":\"list_date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"},\"Name\":\"real_estate.list_date.Variation.Date Hierarchy.Month\",\"NativeReferenceName\":\"list_date Month\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Name\":\"Variation\",\"Property\":\"list_date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"},\"Name\":\"real_estate.list_date.Variation.Date Hierarchy.Day\",\"NativeReferenceName\":\"list_date Day\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"last_sold_price\"}},\"Function\":0},\"Name\":\"Sum(real_estate.last_sold_price)\",\"NativeReferenceName\":\"Sum of last_sold_price\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"list_price\"}},\"Function\":0},\"Name\":\"Sum(real_estate.list_price)\",\"NativeReferenceName\":\"Sum of list_price\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"titleBold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"valueAxis\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Price'\"}}},\"titleBold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 719.25,
+          "width": 1268.90,
+          "x": 10.60,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "619b44d606361c01d813",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"ff84a87b52c1ec88a339\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.448891554591802,\"y\":0,\"z\":0,\"width\":1269.9310249371383,\"height\":720.0055364598953,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(real_estate.last_sold_price)\"},{\"queryRef\":\"Sum(real_estate.list_price)\"}],\"Category\":[{\"queryRef\":\"real_estate.list_date.Variation.Date Hierarchy.Month\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"r\",\"Entity\":\"real_estate\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"last_sold_price\"}},\"Function\":0},\"Name\":\"Sum(real_estate.last_sold_price)\",\"NativeReferenceName\":\"Sum of last_sold_price\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"list_price\"}},\"Function\":0},\"Name\":\"Sum(real_estate.list_price)\",\"NativeReferenceName\":\"Sum of list_price\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Name\":\"Variation\",\"Property\":\"list_date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"},\"Name\":\"real_estate.list_date.Variation.Date Hierarchy.Month\",\"NativeReferenceName\":\"list_date Month\"}]},\"queryOptions\":{\"keepProjectionOrder\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Month'\"}}},\"titleBold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"valueAxis\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Price'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 720.01,
+          "width": 1269.93,
+          "x": 9.45,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Page 3",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "b1523b33c00d52a6001b",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"8dadacaac33ed245dec7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.896907216494846,\"y\":0,\"z\":0,\"width\":1270.1030927835052,\"height\":719.1752577319588,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"real_estate.type\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(real_estate.property_id)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"r\",\"Entity\":\"real_estate\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"type\"},\"Name\":\"real_estate.type\",\"NativeReferenceName\":\"type\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"property_id\"}},\"Function\":5},\"Name\":\"CountNonNull(real_estate.property_id)\",\"NativeReferenceName\":\"property_id\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"property_id\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"real_estate\"}},\"Property\":\"type\"}},\"Right\":{\"Literal\":{\"Value\":\"'multi_family'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"real_estate\"}},\"Property\":\"type\"}},\"Right\":{\"Literal\":{\"Value\":\"'single_family'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":5,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"real_estate\"}},\"Property\":\"type\"}},\"Right\":{\"Literal\":{\"Value\":\"'condos'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":6,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"real_estate\"}},\"Property\":\"type\"}},\"Right\":{\"Literal\":{\"Value\":\"'land'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"real_estate\"}},\"Property\":\"type\"}},\"Right\":{\"Literal\":{\"Value\":\"'duplex_triplex'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":9,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"real_estate\"}},\"Property\":\"type\"}},\"Right\":{\"Literal\":{\"Value\":\"'townhomes'\"}}}}}]}}]}}}",
+          "filters": "[]",
+          "height": 719.18,
+          "width": 1270.10,
+          "x": 9.90,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
